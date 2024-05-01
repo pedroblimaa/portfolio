@@ -1,0 +1,80 @@
+.home-page {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+.title {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  span {
+    color: var(--primary-color);
+  }
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.4em;
+}
+
+.primary-btn.download-btn {
+  transition: 0.3s;
+  display: flex;
+  padding: 0.4em 0.8em;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+
+  svg {
+    width: 1.5em;
+    height: auto;
+    margin-right: 10px;
+
+    path {
+      transition: 0.3s;
+      stroke-width: 2.5;
+      stroke: var(--body-background-color);
+    }
+  }
+}
+
+.primary-btn.download-btn:hover {
+  background-color: var(--primary-color-hover);
+  color: var(--text-color);
+
+  svg path {
+    stroke: var(--text-color);
+  }
+}
+
+.link-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  svg {
+    cursor: pointer;
+    transition: 0.2s;
+    width: 2em;
+    height: auto;
+    fill: var(--primary-color);
+
+    path {
+      fill: var(--primary-color);
+    }
+  }
+
+  svg:hover {
+    transform: scale(1.3);
+  }
+}

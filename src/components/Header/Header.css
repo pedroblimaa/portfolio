@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex: 0 0 auto;
+}
+
+.bright-container {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  div {
+    height: 20px;
+  }
+
+  svg {
+    width: 20px;
+    height: auto;
+
+    path {
+      transition: 0.3s;
+      fill: var(--text-color);
+    }
+  }
+}
+
+.bright-container:hover svg path {
+  fill: var(--primary-color);
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+
+  a:hover {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+  }
+}
