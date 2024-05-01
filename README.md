@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Portfolio - Under Development
+Welcome to my portfolio! While it's still under development, here's a glimpse of what's to come.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used
+This portfolio is built using React, TypeScript, and Vite. These modern technologies ensure a smooth development experience and high performance.
 
-Currently, two official plugins are available:
+## Features
+- **Minimal Setup**: The portfolio is set up with a minimal configuration to get started quickly.
+- **Hot Module Replacement (HMR)** : Enjoy fast development with HMR, allowing instant updates as you make changes.
+- **ESLint Rules**: The project includes ESLint rules for maintaining code quality and consistency.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Future Plans
+Here's what I'm planning to add to this portfolio:
 
-## Expanding the ESLint configuration
+- **Project Showcase**: Displaying my completed projects with details.
+- **About Me Section**: Providing insights into my skills, experience, and interests.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Expanding the Project
+As development progresses, I'll be expanding the portfolio with additional features and enhancements. Stay tuned for updates!
 
-- Configure the top-level `parserOptions` property like this:
+## Feedback
+Your feedback is valuable! If you have any suggestions or ideas for improvement, feel free to reach out.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Stay Updated
+Stay updated with the latest developments and releases by following me on GitHub.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Thank you for visiting! 🚀
