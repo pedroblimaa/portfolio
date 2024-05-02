@@ -9,7 +9,7 @@ import TelegramIcon from '../../assets/telegram-icon.svg'
 function Home() {
   return (
     <div className='home-page'>
-      <ReactSVG src={LaptopIcon} />
+      <ReactSVG className='laptop-icon' src={LaptopIcon} />
       <h1 className='title'>
         Hi, I'm <span>Pedro</span> Bonfilio
       </h1>
