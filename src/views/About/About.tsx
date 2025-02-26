@@ -1,6 +1,15 @@
 import './About.css'
+
+import Description from './Description/Description'
+import TechStack from './TechStach/TechStack'
+
 function About() {
-  return <h1>About</h1>
+  return (
+    <div className='about-page'>
+      <Description />
+      <TechStack />
+    </div>
+  )
 }
 
 export default About

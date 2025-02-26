@@ -1,0 +1,33 @@
+.tech-stack-container {
+  h1 {
+    margin: 0;
+    margin-bottom: 3em;
+  }
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4rem;
+
+}
+
+.tech-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  .tech-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tech-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

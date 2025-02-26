@@ -1,6 +1,6 @@
 import './Header.css'
 import BrightIcon from '../../assets/brightness-icon.svg'
-import MainIcon from '../../assets/DarkMainIcon.svg'
+import MainIcon from '../../assets/dark-main-icon.svg'
 import { ReactSVG } from 'react-svg'
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
