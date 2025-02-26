@@ -1,6 +1,5 @@
 import { ReactSVG } from 'react-svg'
 import './Home.css'
-import LaptopIcon from '../../assets/laptop-coffee.svg'
 import DownloadIcon from '../../assets/download-icon.svg'
 import GithubIcon from '../../assets/github-icon.svg'
 import LinkedinIcon from '../../assets/linkedin-icon.svg'
@@ -9,7 +8,6 @@ import TelegramIcon from '../../assets/telegram-icon.svg'
 function Home() {
   return (
     <div className='home-page'>
-      <ReactSVG className='laptop-icon' src={LaptopIcon} />
       <h1 className='title'>
         Hi, I'm <span>Pedro</span> Bonfilio
       </h1>

@@ -5,20 +5,63 @@ header {
   align-items: center;
   padding: 1rem 0;
   flex: 0 0 auto;
+  position: relative;
 }
 
-.bright-container {
+.left-icons {
   display: flex;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-icon {
+  /* position: absolute; */
+  padding: 0.5rem;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  top: 1rem;
 
   div {
-    height: 20px;
+    height: 1.5rem;
   }
 
   svg {
-    width: 20px;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: 0.3s;
+  }
+}
+
+.full-icon {
+  position: absolute;
+  left: 50%;
+  top: 10rem;
+  transform: translateX(-50%);
+
+  svg {
+    height: 19em;
+    width: 19em;
+  }
+}
+
+.move-right {
+  margin-left: 3.5rem;
+}
+
+.bright-icon {
+  transition: 0.3s;
+  display: flex;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  div {
+    height: 1.5rem;
+  }
+
+  svg {
+    width: 1.5rem;
     height: auto;
 
     path {
@@ -28,7 +71,7 @@ header {
   }
 }
 
-.bright-container:hover svg path {
+.bright-icon:hover svg path {
   fill: var(--primary-color);
 }
 
@@ -38,9 +81,11 @@ header {
 
   a {
     cursor: pointer;
-    padding: 5px 15px;
+    padding: 0.25rem 1rem;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    text-decoration: none;
   }
 
   a:hover {
