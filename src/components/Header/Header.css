@@ -36,7 +36,7 @@ header {
 .full-icon {
   position: absolute;
   left: 50%;
-  top: calc(40vh - 12rem);
+  top: calc(50vh - 20rem);
   transform: translateX(-50%);
 
   svg {
