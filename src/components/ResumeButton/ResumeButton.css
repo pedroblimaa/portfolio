@@ -1,0 +1,31 @@
+.primary-btn.download-btn {
+  transition: 0.3s;
+  display: flex;
+  padding: 0.4rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+
+  svg {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+
+    path {
+      transition: 0.3s;
+      stroke-width: 2.5;
+      stroke: var(--body-background-color);
+    }
+  }
+}
+
+.primary-btn.download-btn:hover {
+  background-color: var(--primary-color-hover);
+  color: var(--text-color);
+
+  svg {
+    path {
+      stroke: var(--text-color);
+    }
+  }
+}
