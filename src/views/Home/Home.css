@@ -10,7 +10,7 @@
   gap: 1.5rem;
 }
 
-.title {
+.home-page .title {
   padding-top: 19.5rem;
   font-size: 3.5rem;
   font-weight: 600;
@@ -22,13 +22,13 @@
   }
 }
 
-.description {
+.home-page .description {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 1.4rem;
 }
 
-.link-icons {
+.home-page .link-icons {
   display: flex;
   justify-content: center;
   align-items: center;

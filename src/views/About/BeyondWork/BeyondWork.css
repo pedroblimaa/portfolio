@@ -1,0 +1,20 @@
+.beyond-work-container {
+  h1 {
+    margin: 0;
+    margin-bottom: 3em;
+  }
+}
+
+.beyond-work-container .content { 
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-align: left;
+  gap: 18rem;
+}
+
+.beyond-work-container .icons {
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+}
