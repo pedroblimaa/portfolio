@@ -1,10 +1,9 @@
 import { ReactSVG } from 'react-svg'
-
+import './Home.css'
 import GithubIcon from '../../assets/github-icon.svg'
 import LinkedinIcon from '../../assets/linkedin-icon.svg'
 import TelegramIcon from '../../assets/telegram-icon.svg'
 import ResumeButton from '../../components/ResumeButton/ResumeButton'
-import './Home.css'
 
 function Home() {
   return (
