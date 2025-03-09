@@ -1,0 +1,12 @@
+.projects-section {
+  margin-bottom: 4rem;
+}
+
+.projects-section .projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-section .footer-text {
+  margin-top: 3.5rem;
+}

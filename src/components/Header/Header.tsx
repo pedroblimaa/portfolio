@@ -50,6 +50,7 @@ function Header() {
       <div className='menu'>
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
+        <Link to='/work'>Work</Link>
         <Link to='/resume'>Resume</Link>
       </div>
     </header>

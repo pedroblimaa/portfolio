@@ -1,0 +1,23 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-color);
+  padding: 1.5rem;
+  width: 18rem;
+  height: auto;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.project-card a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.project-card p {
+  text-align: start; 
+}
+
+.project-card img {
+  height: 10rem;
+}

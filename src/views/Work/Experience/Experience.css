@@ -1,0 +1,12 @@
+.experience-section .timeline {
+  position: relative;
+}
+
+.experience-section .line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background-color: var(--primary-color);
+}
