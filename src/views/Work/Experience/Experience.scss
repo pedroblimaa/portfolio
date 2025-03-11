@@ -1,0 +1,20 @@
+.experience-section {
+  .timeline {
+    position: relative;
+  }
+
+  .line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

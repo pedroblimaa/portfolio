@@ -1,4 +1,4 @@
-import './About.css'
+import './About.scss'
 import BeyondWork from './BeyondWork/BeyondWork'
 
 import Description from './Description/Description'

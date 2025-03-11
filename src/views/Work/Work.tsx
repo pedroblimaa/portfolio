@@ -1,6 +1,6 @@
 import Experience from './Experience/Experience'
 import Projects from './Projects/Projects'
-import './Work.css'
+import './Work.scss'
 
 function Work() {
   

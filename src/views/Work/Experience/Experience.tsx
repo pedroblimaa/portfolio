@@ -3,8 +3,12 @@ import {
   Position,
   TimelineItemInfo,
 } from '../../../components/TimelineItem/TimelineTypes'
-import InatelImg from '../../../assets/Inatel.svg'
-import './Experience.css'
+import AuremImg from '../../../assets/companies/aurem.svg'
+import NoImg from '../../../assets/companies/no-company-icon.svg'
+import Mova from '../../../assets/companies/mova.svg'
+import InatelImg from '../../../assets/companies/inatel.svg'
+
+import './Experience.scss'
 
 function Experience() {
   const cardInfos: TimelineItemInfo[] = [
@@ -12,7 +16,7 @@ function Experience() {
       company: 'Aurem - Startup',
       role: 'CTO',
       period: '2019-2018',
-      companyImg: 'https://via.placeholder.com/150',
+      companyImg: AuremImg,
       bullets: [
         {
           title: 'Team management',
@@ -40,7 +44,7 @@ function Experience() {
       company: 'Sempher (Internship)',
       role: 'Full Stack Developer',
       period: '2018-2021',
-      companyImg: 'https://via.placeholder.com/150',
+      companyImg: NoImg,
       bullets: [
         {
           title: 'Front End development',
@@ -58,7 +62,7 @@ function Experience() {
       company: 'MOVA (Internship)',
       role: 'Back-End Developer',
       period: '2021-2021',
-      companyImg: 'https://via.placeholder.com/150',
+      companyImg: Mova,
       bullets: [
         {
           title: 'Back End development',
@@ -117,10 +121,15 @@ function Experience() {
       <p className='description'>My journey so far</p>
       <div className='timeline'>
         <div className='line'></div>
-        <TimelineItem
-          itemInfo={cardInfos[cardInfos.length - 1]}
-          position={Position.Left}
-        />
+        <div className='cards-container'>
+          {cardInfos.map((cardInfo, index) => (
+            <TimelineItem
+              key={index}
+              itemInfo={cardInfo}
+              position={index % 2 === 0 ? Position.Left : Position.Right}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )

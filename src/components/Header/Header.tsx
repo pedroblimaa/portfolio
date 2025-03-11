@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.scss'
 import BrightIcon from '../../assets/brightness-icon.svg'
 import MainIcon from '../../assets/dark-main-icon.svg'
 import { ReactSVG } from 'react-svg'

@@ -1,4 +1,4 @@
-import './Projects.css'
+import './Projects.scss'
 import ProjectCard from '../../../components/ProjectCard/ProjectCard'
 import ClipistyImage from '../../../assets/img/Clipisty.png'
 import MonitrilhoImage from '../../../assets/img/Monitrilho.png'

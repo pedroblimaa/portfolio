@@ -1,4 +1,4 @@
-import './ProjectCard.css'
+import './ProjectCard.scss'
 
 export interface Project {
   title: string
