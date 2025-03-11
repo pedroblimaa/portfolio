@@ -17,11 +17,19 @@
 
   .duration-container {
     display: flex;
-    align-items: left;
+
+    &.left {
+      align-items: flex-start;
+      margin-left: 1.5rem;
+    }
+
+    &.right {
+      justify-content: flex-end;
+      margin-right: 1.5rem;
+    }
 
     .duration {
-      margin-left: 1rem;
-      margin-top: 1.5rem;
+      margin-top:   35px;
       transform: translateY(-50%);
       background-color: var(--primary-color);
       color: var(--button-text-color);

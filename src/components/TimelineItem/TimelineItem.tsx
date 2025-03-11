@@ -11,13 +11,13 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
           <div className='company-card'>
             <img src={itemInfo.companyImg} alt={itemInfo.company} />
           </div>
-          <div className='duration-container'>
+          <div className={`duration-container ${position}`}>
             <div className='duration'>{itemInfo.period}</div>
           </div>
         </>
       ) : (
         <>
-          <div className='duration-container'>
+          <div className={`duration-container ${position}`}>
             <div className='duration'>{itemInfo.period}</div>
           </div>
           <div className='company-card'>
