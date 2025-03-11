@@ -1,16 +1,20 @@
 .timeline-card {
   border: 1px solid var(--primary-color);
-  border-top-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  box-shadow: 0 0 0.8rem 0.25rem var(--primary-color);
+
   padding: 1.5rem;
   text-align: start;
 
   &.left {
-    margin-right: 1rem;
+    margin-right: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
   }
 
   &.right {
-    margin-left: 1rem;
+    margin-left: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
   }
 
   .company,
