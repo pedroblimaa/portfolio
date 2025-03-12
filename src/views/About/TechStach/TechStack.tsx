@@ -1,7 +1,7 @@
 
 import { ReactSVG } from 'react-svg'
 
-import './TechStack.css'
+import './TechStack.scss'
 import Angular from '../../../assets/tech-stack/angular.svg';
 import Docker from '../../../assets/tech-stack/docker.svg';
 import Electron from '../../../assets/tech-stack/electron.svg';

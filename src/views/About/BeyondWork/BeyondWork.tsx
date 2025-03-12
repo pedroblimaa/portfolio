@@ -1,6 +1,6 @@
 import { ReactSVG } from 'react-svg'
 
-import './BeyondWork.css'
+import './BeyondWork.scss'
 import Bar from '../../../assets/beyond-work/bar.svg'
 import Gamepad from '../../../assets/beyond-work/gamepad.svg'
 import Guitar from '../../../assets/beyond-work/guitar.svg'

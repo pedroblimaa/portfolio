@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.scss'
 import BrightIcon from '../../assets/brightness-icon.svg'
 import MainIcon from '../../assets/dark-main-icon.svg'
 import { ReactSVG } from 'react-svg'
@@ -50,6 +50,7 @@ function Header() {
       <div className='menu'>
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
+        <Link to='/work'>Work</Link>
         <Link to='/resume'>Resume</Link>
       </div>
     </header>

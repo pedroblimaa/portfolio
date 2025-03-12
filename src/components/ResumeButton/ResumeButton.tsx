@@ -1,7 +1,7 @@
 import { ReactSVG } from 'react-svg'
 
 import DownloadIcon from '../../assets/download-icon.svg'
-import './ResumeButton.css'
+import './ResumeButton.scss'
 
 function ResumeButton() {
   return (

@@ -1,0 +1,43 @@
+.timeline-card {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 0.8rem 0.25rem var(--primary-color);
+
+  padding: 1.5rem;
+  text-align: start;
+
+  &.left {
+    margin-right: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+
+  &.right {
+    margin-left: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  .company,
+  .role {
+    margin: 0;
+  }
+
+  .company {
+    font-weight: normal;
+  }
+
+  .role {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+}

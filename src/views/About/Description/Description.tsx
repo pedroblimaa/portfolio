@@ -1,7 +1,7 @@
 import { ReactSVG } from 'react-svg'
 import ResumeButton from '../../../components/ResumeButton/ResumeButton'
 import Avatar from '../../../assets/avatar.svg'
-import './Description.css'
+import './Description.scss'
 
 function Description() {
   return (
