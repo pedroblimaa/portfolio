@@ -15,7 +15,7 @@
     }
   }
 
-  .duration-container {
+  .period-container {
     display: flex;
 
     &.left {
@@ -28,7 +28,7 @@
       margin-right: 1.5rem;
     }
 
-    .duration {
+    .period {
       margin-top:   35px;
       transform: translateY(-50%);
       background-color: var(--primary-color);

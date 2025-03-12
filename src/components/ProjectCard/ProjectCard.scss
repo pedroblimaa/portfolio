@@ -8,6 +8,16 @@
   height: auto;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 1rem 0.5rem var(--primary-color);
+  transform: scale(1.05);
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 .project-card a {
