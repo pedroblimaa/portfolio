@@ -6,7 +6,7 @@ import { cardInfos } from './experienceData'
 function Experience() {
   return (
     <div className='experience-section'>
-      <h1 className='title'>Experience</h1>
+      <h1 className='default-title'>Experience</h1>
       <p className='description'>My journey so far</p>
       <div className='timeline'>
         <div className='line'></div>
