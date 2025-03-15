@@ -9,7 +9,7 @@ export interface Project {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className='project-card'>
+    <div className='project-card default-card'>
       <a href={project.link} target='_blank' rel='noreferrer'>
         <img src={project.image} alt={project.title} />
         <h3>{project.title}</h3>

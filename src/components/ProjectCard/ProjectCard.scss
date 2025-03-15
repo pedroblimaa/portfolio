@@ -1,18 +1,14 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--primary-color);
-  box-shadow: 0 0 0.8rem 0.25rem var(--primary-color);
   padding: 1.5rem;
   width: 18rem;
   height: auto;
-  border-top-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-  transition: 0.3s;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .project-card:hover {
-  box-shadow: 0 0 1rem 0.5rem var(--primary-color);
   transform: scale(1.05);
   border-top-left-radius: 0rem;
   border-bottom-right-radius: 0rem;
@@ -21,7 +17,7 @@
 }
 
 .project-card a {
-  color: var(--text-color);
+  color: var(--card-text-color);
   text-decoration: none;
 }
 

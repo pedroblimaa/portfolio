@@ -3,7 +3,7 @@ import './TimelineCard.scss'
 
 function TimelineCard({ position, itemInfo }: TimelineCardProps) {
   return (
-    <div className={`timeline-card ${position}`}>
+    <div className={`timeline-card default-card ${position}`}>
         <h3 className='company'> {itemInfo.company}</h3>
         <h2 className='role'>{itemInfo.role}</h2>
         <ul className='bullets'>
