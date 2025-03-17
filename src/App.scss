@@ -38,6 +38,13 @@
   font-size: 2.5rem;
 }
 
+.default-card {
+  background-color: var(--background-card-color);
+  box-shadow: 2px 2px 2px var(--primary-color);
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
   transition: 0.3s;

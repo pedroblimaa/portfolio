@@ -4,17 +4,16 @@ import MainIcon from '../../assets/dark-main-icon.svg'
 import { ReactSVG } from 'react-svg'
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-
-const DATA_THEME = 'data-theme'
-const DARK_THEME = 'dark'
-const LIGHT_THEME = 'light'
+import { useTheme } from '../../hooks/useTheme'
 
 function Header() {
+  const location = useLocation()
+  const themeHandler = useTheme()
+
   const getIsIconFull = (path: string) => {
     return path === '/'
   }
 
-  const location = useLocation()
   const [showIconFull, setShowIconFull] = useState(
     getIsIconFull(location.pathname)
   )
@@ -24,11 +23,7 @@ function Header() {
   }, [location.pathname])
 
   const changeTheme = () => {
-    const body = document.getElementsByTagName('body')[0]
-    const newTheme =
-      body.getAttribute(DATA_THEME) === 'light' ? DARK_THEME : LIGHT_THEME
-
-    body.setAttribute(DATA_THEME, newTheme)
+    themeHandler.toggleTheme()
   }
 
   return (
