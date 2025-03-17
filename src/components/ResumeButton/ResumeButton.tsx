@@ -9,7 +9,7 @@ interface ResumeButtonProps {
 
 function ResumeButton(props: ResumeButtonProps) {
   return (
-    <a href='/public/PedroBonfilio_Resume.pdf' download={true}>
+    <a href='/PedroBonfilio_Resume.pdf' download={true}>
       <button className='primary-btn download-btn'>
         <ReactSVG src={DownloadIcon} />
         {props.label || 'Download My Resume'}
