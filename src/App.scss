@@ -39,8 +39,7 @@
 }
 
 .default-card {
-  // background-color: #232323;
-  background-color: #232323;
+  background-color: var(--background-card-color);
   box-shadow: 2px 2px 2px var(--primary-color);
   border-radius: 1.5rem;
   transition: 0.3s;
