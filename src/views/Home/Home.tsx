@@ -15,7 +15,7 @@ function Home() {
       <ResumeButton />
       <div className='link-icons'>
         <a
-          href='www.linkedin.com/in/pedro-bonfilio-lima-0693a914a'
+          href='https://github.com/pedroblimaa'
           target='_blank'
         >
           <ReactSVG src={GithubIcon} />
