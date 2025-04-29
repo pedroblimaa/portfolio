@@ -38,3 +38,11 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .timeline-card {
+    &.right {
+      box-shadow: -2px 2px 2px var(--primary-color);
+    }
+  }
+}

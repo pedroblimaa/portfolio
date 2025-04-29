@@ -99,3 +99,9 @@ header {
     top: calc(50vh - 25rem);
   }
 }
+
+@media screen and (max-width: 450px) {
+  .menu {
+    gap: .5rem;
+  }
+}

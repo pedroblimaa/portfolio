@@ -47,6 +47,18 @@
 
     .icons {
       justify-content: center;
+
+      svg {
+        width: 6rem;
+        height: 6rem;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .beyond-work-container .content .icons {
+    flex-direction: column;
+    gap: 2rem;
   }
 }

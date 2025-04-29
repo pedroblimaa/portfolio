@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 
+  .timeline-card-container {
+    width: 100%;
+  }
+
   .company-card {
     position: relative;
     height: 70px;
@@ -36,6 +40,38 @@
       height: fit-content;
       padding: 0.25rem 0.5rem;
       border-radius: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .timeline-item {
+    display: flex;
+
+    .company-card, .period-container {
+      position: absolute;
+    }
+
+    .company-card {
+      &.left{
+        right: 2rem;
+        transform: translateX(50%) translateY(1rem);
+      }
+
+      &.right {
+        left: 2rem;
+        transform: translateX(-50%) translateY(1rem);
+      }
+    }
+
+    .period-container {
+      &.left {
+        right: 6rem;
+      }
+
+      &.right {
+        right: 2rem;
+      }
     }
   }
 }

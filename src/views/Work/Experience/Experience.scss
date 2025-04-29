@@ -18,3 +18,16 @@
     gap: 5rem;
   }
 }
+
+@media screen {
+  .experience-section {
+
+    .line {
+      display: none;
+    }
+
+    .cards-container {
+      gap: 2rem;
+    }
+  }
+}

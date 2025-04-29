@@ -29,17 +29,18 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
   const renderItem = (type: 'card' | 'period') => {
     if (type === 'card') {
       return (
-        <motion.div variants={cardVariants}>
+        <motion.div className='timeline-card-container' variants={cardVariants}>
           <TimelineCard itemInfo={itemInfo} position={position} />
         </motion.div>
       )
     }
 
     return (
-      <motion.div variants={durationVariants}>
-        <div className={`period-container ${position}`}>
-          <div className='period'>{itemInfo.period}</div>
-        </div>
+      <motion.div
+        className={`period-container ${position}`}
+        variants={durationVariants}
+      >
+        <div className='period'>{itemInfo.period}</div>
       </motion.div>
     )
   }
@@ -52,7 +53,7 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
     >
       <div className='timeline-item'>
         {position === Position.Left ? renderItem('card') : renderItem('period')}
-        <div className='company-card'>
+        <div className={`company-card ${position}`} >
           <img src={itemInfo.companyImg} alt={itemInfo.company} />
         </div>
         {position === Position.Right
