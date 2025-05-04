@@ -8,11 +8,11 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
   const createVariants = (direction: 'left' | 'right') => ({
     offscreen: {
       opacity: 0,
-      x: direction === 'left' ? -200 : 200,
+      translateX: direction === 'left' ? -200 : 200,
     },
     onscreen: {
       opacity: 1,
-      x: 0,
+      translateX: 0,
       transition: {
         period: 0.3,
       },
@@ -36,12 +36,13 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
     }
 
     return (
-      <motion.div
-        className={`period-container ${position}`}
-        variants={durationVariants}
-      >
-        <div className='period'>{itemInfo.period}</div>
-      </motion.div>
+      <div className={`period-container ${position}`}>
+        <motion.div
+          variants={durationVariants}
+        >
+          <div className='period'>{itemInfo.period}</div>
+        </motion.div>
+      </div>
     )
   }
 
@@ -53,7 +54,7 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
     >
       <div className='timeline-item'>
         {position === Position.Left ? renderItem('card') : renderItem('period')}
-        <div className={`company-card ${position}`} >
+        <div className={`company-card ${position}`}>
           <img src={itemInfo.companyImg} alt={itemInfo.company} />
         </div>
         {position === Position.Right

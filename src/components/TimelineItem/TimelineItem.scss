@@ -7,6 +7,7 @@
   }
 
   .company-card {
+    z-index: 1;
     position: relative;
     height: 70px;
     width: 70px;
@@ -20,6 +21,7 @@
   }
 
   .period-container {
+    z-index: 1;
     display: flex;
 
     &.left {
@@ -33,7 +35,7 @@
     }
 
     .period {
-      margin-top:   35px;
+      margin-top: 35px;
       transform: translateY(-50%);
       background-color: var(--primary-color);
       color: var(--button-text-color);
@@ -48,29 +50,48 @@
   .timeline-item {
     display: flex;
 
-    .company-card, .period-container {
+    .timeline-card {
+      &.left {
+        margin-right: 9rem;
+      }
+
+      &.right {
+        margin-left: 9rem;
+      }
+    }
+
+    .company-card,
+    .period-container {
       position: absolute;
     }
 
     .company-card {
-      &.left{
-        right: 2rem;
-        transform: translateX(50%) translateY(1rem);
+      &.left {
+        right: 0.5rem;
+        transform: translateY(1rem);
       }
 
       &.right {
-        left: 2rem;
-        transform: translateX(-50%) translateY(1rem);
+        left: 0.5rem;
+        transform: translateY(1rem);
       }
     }
 
     .period-container {
+      &.left,
+      &.right {
+        margin: 0;
+        margin-top: 7em;
+      }
+
       &.left {
-        right: 6rem;
+        right: 3.8rem;
+        transform: translateX(50%);
       }
 
       &.right {
-        right: 2rem;
+        left: 3.8rem;
+        transform: translateX(-50%);
       }
     }
   }
