@@ -92,3 +92,16 @@ header {
     color: var(--button-text-color);
   }
 }
+
+
+@media screen and (max-width: 550px) {
+  .full-icon {
+    top: calc(50vh - 25rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .menu {
+    gap: .5rem;
+  }
+}

@@ -48,6 +48,8 @@
 
   svg {
     margin-left: 10px;
+    width: 20rem;
+    height: 20rem;
   }
 }
 
@@ -56,4 +58,29 @@
   transform: scale(1.05);
   border: 2px solid var(--primary-color);
   rotate: 5deg;
+}
+
+@media screen and (max-width: 960px) {
+  .description-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 0;
+
+    .description {
+      order: 2;
+
+      * {
+        text-align: center;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .avatar-container {
+      order: 1;
+    }
+  }
 }

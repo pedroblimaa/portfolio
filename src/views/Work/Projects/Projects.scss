@@ -7,3 +7,28 @@
 .projects-section .footer-text {
   margin-top: 3.5rem;
 }
+
+@media screen and (max-width: 1200px) {
+  .projects-section .projects {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .projects-section .projects {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    .project-card {
+      width: 80%;
+      max-width: 300px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+

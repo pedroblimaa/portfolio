@@ -2,7 +2,12 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 
+  .timeline-card-container {
+    width: 100%;
+  }
+
   .company-card {
+    z-index: 1;
     position: relative;
     height: 70px;
     width: 70px;
@@ -16,6 +21,7 @@
   }
 
   .period-container {
+    z-index: 1;
     display: flex;
 
     &.left {
@@ -29,13 +35,64 @@
     }
 
     .period {
-      margin-top:   35px;
+      margin-top: 35px;
       transform: translateY(-50%);
       background-color: var(--primary-color);
       color: var(--button-text-color);
       height: fit-content;
       padding: 0.25rem 0.5rem;
       border-radius: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .timeline-item {
+    display: flex;
+
+    .timeline-card {
+      &.left {
+        margin-right: 9rem;
+      }
+
+      &.right {
+        margin-left: 9rem;
+      }
+    }
+
+    .company-card,
+    .period-container {
+      position: absolute;
+    }
+
+    .company-card {
+      &.left {
+        right: 0.5rem;
+        transform: translateY(1rem);
+      }
+
+      &.right {
+        left: 0.5rem;
+        transform: translateY(1rem);
+      }
+    }
+
+    .period-container {
+      &.left,
+      &.right {
+        margin: 0;
+        margin-top: 7em;
+      }
+
+      &.left {
+        right: 3.8rem;
+        transform: translateX(50%);
+      }
+
+      &.right {
+        left: 3.8rem;
+        transform: translateX(-50%);
+      }
     }
   }
 }
