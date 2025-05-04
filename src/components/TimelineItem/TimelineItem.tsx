@@ -3,28 +3,25 @@ import { motion } from 'motion/react'
 import TimelineCard from './TimelineCard/TimelineCard'
 import './TimelineItem.scss'
 import { Position, TimelineCardProps } from './TimelineTypes'
+import * as motionService from '../../services/MotionService'
 
 function TimelineItem({ position, itemInfo }: TimelineCardProps) {
-  const createVariants = (direction: 'left' | 'right') => ({
-    offscreen: {
-      opacity: 0,
-      translateX: direction === 'left' ? -200 : 200,
-    },
-    onscreen: {
-      opacity: 1,
-      translateX: 0,
-      transition: {
-        period: 0.3,
-      },
-    },
-  })
+  const getPosition = (position: Position, inverted?: boolean) => {
+    if (inverted) {
+      return position === Position.Left ? Position.Right : Position.Left
+    }
 
-  const cardVariants = createVariants(
-    position === Position.Left ? 'left' : 'right'
-  )
-  const durationVariants = createVariants(
-    position === Position.Left ? 'right' : 'left'
-  )
+    return position
+  }
+
+  const getVariants = (position: Position, inverted?: boolean) => {
+    const direction = getPosition(position, inverted)
+    const isMobile = window.innerWidth <= 800
+    return motionService.createSizeBaseVariants({ isMobile, direction })
+  }
+
+  const cardVariants = getVariants(position)
+  const durationVariants = getVariants(position, true)
 
   const renderItem = (type: 'card' | 'period') => {
     if (type === 'card') {
@@ -37,9 +34,7 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
 
     return (
       <div className={`period-container ${position}`}>
-        <motion.div
-          variants={durationVariants}
-        >
+        <motion.div variants={durationVariants}>
           <div className='period'>{itemInfo.period}</div>
         </motion.div>
       </div>
@@ -47,19 +42,13 @@ function TimelineItem({ position, itemInfo }: TimelineCardProps) {
   }
 
   return (
-    <motion.div
-      initial='offscreen'
-      whileInView='onscreen'
-      viewport={{ amount: 0.8 }}
-    >
+    <motion.div initial='offscreen' whileInView='onscreen' viewport={{ amount: 0.8 }}>
       <div className='timeline-item'>
         {position === Position.Left ? renderItem('card') : renderItem('period')}
         <div className={`company-card ${position}`}>
           <img src={itemInfo.companyImg} alt={itemInfo.company} />
         </div>
-        {position === Position.Right
-          ? renderItem('card')
-          : renderItem('period')}
+        {position === Position.Right ? renderItem('card') : renderItem('period')}
       </div>
     </motion.div>
   )
