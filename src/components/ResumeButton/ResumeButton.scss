@@ -21,6 +21,6 @@
 
 .primary-btn.download-btn:hover {
   filter: brightness(1.2);
-  transform: scale(1.02);
+  transform: translateY(-10%);
   box-shadow: var(--shadow-l);
 }
