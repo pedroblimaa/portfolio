@@ -5,7 +5,7 @@
   font-size: clamp(10px, 10px + 0.3vw, 20px);
 }
 
-html { 
+html {
   font-size: clamp(10px, 10px + 0.3vw, 20px);
 }
 
@@ -17,7 +17,7 @@ html {
 
 @media screen and (max-width: 800px) {
   #root {
-    max-width:95%;
+    max-width: 95%;
   }
 }
 
@@ -49,8 +49,8 @@ html {
 }
 
 .default-card {
-  background-color: var(--background-card-color);
-  box-shadow: 2px 2px 2px var(--primary-color);
+  background-color: var(--bg-color-2);
+  box-shadow: var(--shadow-m);
   border-radius: 1.5rem;
   transition: 0.3s;
 }
@@ -62,14 +62,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--body-background-color);
+  background: var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb {
   transition: 0.3s;
   background: var(--primary-color);
   border-radius: 1em;
-  border: 3px solid var(--body-background-color);
+  border: 3px solid var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -4,16 +4,12 @@
   padding: 1.5rem;
   width: 18rem;
   height: auto;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
-  border-top-left-radius: 0rem;
-  border-bottom-right-radius: 0rem;
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  transform: scale(1.03);
+  box-shadow: var(--shadow-l);
+  background-color: var(--bg-color-3);
 }
 
 .project-card a {

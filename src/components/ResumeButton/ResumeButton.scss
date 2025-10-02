@@ -14,18 +14,13 @@
     path {
       transition: 0.3s;
       stroke-width: 2.5;
-      stroke: var(--body-background-color);
+      stroke: var(--bg-color);
     }
   }
 }
 
 .primary-btn.download-btn:hover {
-  background-color: var(--primary-color-hover);
-  color: var(--text-color);
-
-  svg {
-    path {
-      stroke: var(--text-color);
-    }
-  }
+  filter: brightness(1.2);
+  transform: scale(1.02);
+  box-shadow: var(--shadow-l);
 }
