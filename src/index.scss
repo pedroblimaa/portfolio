@@ -20,25 +20,31 @@
   --shadow-m: inset 0 1px 2px #ffffff50, 0 2px 4px #00000060, 0 4px 8px #00000040;
   --shadow-l: inset 0 1px 2px #ffffff70, 0 4px 6px #00000060, 0 6px 10px #00000040;
 
+  
+
   --inside-shadow-s: inset 0 1px 2px #00000030, inset 0 2px 4px #00000020,
     inset 0 -1px 2px #ffffff30;
   --inside-shadow-m: inset 0 2px 4px #00000050, inset 0 4px 8px #00000020,
     inset 0 -1px 2px #ffffff50;
   --inside-shadow-l: inset 0 4px 8px #00000070, inset 0 6px 10px #00000020,
     inset 0 -1px 2px #ffffff70;
+
+  --svg-shadow: 0px 2px 2px #000000;
 }
 
 [data-theme='light'] {
   --bg-color: #e4e4e4;
-  --bg-color-2: #f2f2f2;
+  --bg-color-2: #efefef;
+  --bg-color-3: #f9f9f9;
   --primary-color: #d7263d;
   --primary-color-hover: #f74c62;
   --text-color: #1a1a1a;
   --button-text-color: #e4e4e4;
-
+  
   --shadow-s: inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000020;
   --shadow-m: inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000020;
   --shadow-l: inset 0 1px 2px #ffffff70, 0 4px 6px #00000030, 0 6px 10px #00000020;
+  --svg-shadow: 0px 2px 4px #00000050;
 }
 
 body {

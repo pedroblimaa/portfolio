@@ -40,7 +40,7 @@
     width: 2rem;
     height: auto;
     fill: var(--primary-color);
-    filter: drop-shadow(0px 2px 2px #000000);
+    filter: drop-shadow(var(--svg-shadow));
 
     path {
       fill: var(--primary-color);
