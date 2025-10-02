@@ -1,12 +1,11 @@
-import { ReactSVG } from 'react-svg'
 import ResumeButton from '../../../components/ResumeButton/ResumeButton'
-import Avatar from '../../../assets/avatar.svg'
+import Avatar from '../../../assets/me.jpeg'
 import './Description.scss'
 
 function Description() {
   return (
     <div className='description-container'>
-      <div className='description'>
+      <div className='description'> 
         <h1>
           Wondering Who <span>I am</span>?
         </h1>
@@ -23,11 +22,11 @@ function Description() {
       </div>
       <div className='avatar-container'>
         <a
-          href='https://www.linkedin.com/in/pedro-bonfilio-lima-0693a914a'
+          href='https://www.linkedin.com/in/pedro-bonfilio'
           target='_blank'
         >
           <div className='avatar'>
-            <ReactSVG src={Avatar} />
+            <img src={Avatar} alt="Pedro Bonfilio" />
           </div>
         </a>
       </div>

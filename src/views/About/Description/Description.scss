@@ -45,18 +45,30 @@
   background-color: var(--bg-color-2);
   padding: 2rem;
   border-radius: 2.5rem;
-  box-shadow: var(--shadow-m);
+  box-shadow: var(--shadow-s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  svg {
-    margin-left: 10px;
-    width: 20rem;
-    height: 20rem;
+  /* fixed square container that crops its contents */
+  width: 30rem;
+  height: 30rem;
+  padding: 0; /* keep image edge-to-edge inside rounded container */
+  box-sizing: border-box;
+  overflow: hidden; /* crop overflowing parts of the image */
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* preserve aspect ratio and crop to fill */
+    object-position: center;
   }
 }
 
 .avatar:hover {
   background-color: var(--bg-color-3);
-  box-shadow: var(--shadow-l);
+  box-shadow: var(--shadow-m);
   transform: scale(1.05);
   rotate: 5deg;
 }

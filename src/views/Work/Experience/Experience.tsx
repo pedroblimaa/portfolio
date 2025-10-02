@@ -11,7 +11,7 @@ function Experience() {
       <div className='timeline'>
         <div className='line'></div>
         <div className='cards-container'>
-          {cardInfos.reverse().map((cardInfo, index) => (
+          {cardInfos.map((cardInfo, index) => (
             <TimelineItem
               key={index}
               itemInfo={cardInfo}
